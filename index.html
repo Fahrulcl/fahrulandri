@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Perjalanan ke Jogja</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f5f5f5;
+            color: #333;
+        }
+
+        header {
+            background-color: #4b2e83;
+            color: white;
+            padding: 25px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 2.5em;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+
+        .container {
+            padding: 40px;
+            max-width: 1200px;
+            margin: 30px auto;
+            background: white;
+            box-shadow: 0 0 20px rgba(0,0,0,0.15);
+            border-radius: 15px;
+        }
+
+        .main-image {
+            width: 100%;
+            height: auto;
+            border-radius: 15px;
+            border: 5px solid #e0e0e0;
+            box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+        }
+
+        .caption {
+            font-style: italic;
+            text-align: center;
+            margin: 20px 0;
+            color: #555;
+            font-size: 1.3em;
+            font-weight: 500;
+        }
+
+        p {
+            line-height: 1.8;
+            font-size: 1.2em;
+            margin-bottom: 25px;
+        }
+
+        h2 {
+            font-size: 2em;
+            color: #4b2e83;
+            margin: 40px 0 30px;
+            border-bottom: 3px solid #4b2e83;
+            padding-bottom: 10px;
+        }
+
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+            margin-top: 40px;
+            justify-content: center;
+        }
+
+        .gallery-item {
+            flex: 1 1 calc(33.333% - 30px);
+            min-width: 300px;
+            box-sizing: border-box;
+            background: #ffffff;
+            padding: 25px;
+            border: 2px solid #e0e0e0;
+            border-radius: 15px;
+            transition: all 0.4s ease;
+            box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+        }
+
+        .gallery-item:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 12px 24px rgba(0,0,0,0.15);
+            border-color: #4b2e83;
+        }
+
+        .gallery-item img {
+            width: 100%;
+            border-radius: 12px;
+            border: 4px solid #ddd;
+            display: block;
+            transition: transform 0.3s;
+        }
+
+        .gallery-item:hover img {
+            transform: scale(1.02);
+        }
+
+        .gallery-caption {
+            font-weight: 700;
+            text-align: center;
+            margin: 25px 0 15px;
+            color: #4b2e83;
+            font-size: 1.6em;
+            letter-spacing: 0.5px;
+        }
+
+        .gallery-desc {
+            font-size: 1.3em;
+            color: #444;
+            text-align: justify;
+            margin-top: 15px;
+            line-height: 1.7;
+            font-weight: 500;
+            padding: 0 10px;
+        }
+
+        @media (max-width: 1024px) {
+            .gallery-item {
+                flex: 1 1 calc(50% - 30px);
+            }
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 30px 20px;
+            }
+            
+            .gallery-item {
+                flex: 1 1 100%;
+                min-width: auto;
+            }
+            
+            .gallery-caption {
+                font-size: 1.5em;
+                margin: 20px 0 10px;
+            }
+            
+            .gallery-desc {
+                font-size: 1.2em;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Petualangan Seru ke Jogja</h1>
+</header>
+
+<div class="container">
+    <img src="https://wisatahappy.com/wp-content/uploads/2023/11/tugu-jogja-top-view-by-romain-humbert.jpg" alt="Tugu Jogja" class="main-image">
+    <div class="caption">Tugu Jogja di malam hari, simbol ikonik kota ini yang memancarkan pesona magis</div>
+
+    <h2>Pengalaman Tak Terlupakan</h2>
+    <p>
+        Perjalanan ke Jogja adalah salah satu pengalaman paling menyenangkan dalam hidup saya. Dari suasana kota yang ramah, kuliner yang menggoda, hingga tempat-tempat bersejarah yang memikat hati. Setiap sudut kota ini menawarkan cerita dan keunikan tersendiri.
+    </p>
+    <p>
+        Kami memulai perjalanan dari Jakarta menggunakan kereta api, menikmati pemandangan sawah dan pegunungan sepanjang jalan. Setibanya di Jogja, kami langsung menuju Malioboro — pusat keramaian dan oleh-oleh yang tak pernah sepi pengunjung.
+    </p>
+
+    <h2>Galeri Foto Perjalanan</h2>
+    <div class="gallery">
+        <div class="gallery-item">
+            <img src="img/WhatsApp Image 2025-05-19 at 23.35.51.jpeg" alt="Jalan Malioboro">
+            <div class="gallery-caption">JALAN MALIOBORO</div>
+            <div class="gallery-desc">Jantung kota Yogyakarta yang tak pernah tidur. Deretan pedagang kaki lima menjual berbagai kerajinan khas mulai dari batik, perak, hingga kerajinan kulit. Di malam hari, jalanan ini berubah menjadi surga kuliner dengan lesehan-lesehan yang menyajikan gudeg, sate, dan aneka jajanan tradisional.</div>
+        </div>
+        <div class="gallery-item">
+            <img src="img/WhatsApp Image 2025-05-19 at 23.35.52.jpeg" alt="jalan Yogyakarta">
+            <div class="gallery-caption">JALAN YOGYAKARTA</div>
+            <div class="gallery-desc">Suasana khas jalanan Yogya yang teduh dengan pepohonan besar di kanan kiri jalan. Meskipun sebagai kota pelajar yang sibuk, Jogja tetap mempertahankan nuansa tenang dan asri. Sepeda dan becak masih menjadi transportasi favorit untuk menikmati keindahan kota secara perlahan.</div>
+        </div>
+        <div class="gallery-item">
+            <img src="img/" alt="obelix view">
+            <div class="gallery-caption">OBELIX SEA VIEW</div>
+            <div class="gallery-desc">Surga tersembunyi di perbukitan Bantul yang menawarkan panorama kota Jogja dari ketinggian. Tempat ini menjadi favorit untuk menikmati sunset dengan latar pemandangan kota yang mulai diterangi lampu-lampu. Ayunan tepi tebingnya menjadi spot foto paling ikonik yang wajib dicoba!</div>
+        </div>
+        <div class="gallery-item">
+            <img src="img/WhatsApp Image 2025-05-19 at 23.35.55.jpeg" alt="Omah Oblong Jogja">
+            <div class="gallery-caption">OMAH OBLONG</div>
+            <div class="gallery-desc">Destinasi wisata kekinian dengan konsep arsitektur unik berbentuk oval. Setiap sudutnya dirancang khusus untuk menghasilkan foto-foto estetik. Interior colorful dengan berbagai dekorasi kreatif membuat pengunjung betah berjam-jam berfoto di sini.</div>
+        </div>
+        <div class="gallery-item">
+            <img src="img/WhatsApp Image 2025-05-19 at 23.35.56.jpeg" alt="Pawon Simbok">
+            <div class="gallery-caption">PAWON SIMBOK</div>
+            <div class="gallery-desc">Rumah makan legendaris yang menyajikan masakan Jawa otentik seperti zaman dulu. Nasi liwet komplit dengan ayam goreng, telur, sambal terasi, dan sayur labu siam adalah menu wajib yang harus dicoba. Suasana tradisionalnya membuat kita serasa kembali ke masa kecil.</div>
+        </div>
+        <div class="gallery-item">
+            <img src="img/WhatsApp Image 2025-05-17 at 08.51.06.jpeg" alt="UTDI">
+            <div class="gallery-caption">UTDI YOGYAKARTA</div>
+            <div class="gallery-desc">Universitas Teknologi Digital Indonesia, transformasi dari STMIK Akakom yang telah berpengalaman puluhan tahun. Kampus ini menjadi pusat pengembangan talenta digital dengan fasilitas modern seperti lab AI, IoT, dan ruang kolaborasi kreatif untuk mahasiswa.</div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
